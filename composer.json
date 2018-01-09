@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.5.9",
 
-        "symfony/symfony": "^4.0"
+        "symfony/symfony": "^4.0.3"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.2"
