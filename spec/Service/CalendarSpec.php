@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\AncaRebeca\FullCalendarBundle\Service;
+namespace spec\DylanGD\FullCalendarBundle\Service;
 
-use AncaRebeca\FullCalendarBundle\Event\CalendarEvent;
-use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
-use AncaRebeca\FullCalendarBundle\Service\SerializerInterface;
+use DylanGD\FullCalendarBundle\Event\CalendarEvent;
+use DylanGD\FullCalendarBundle\Model\FullCalendarEvent;
+use DylanGD\FullCalendarBundle\Service\SerializerInterface;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -18,7 +18,7 @@ class CalendarSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('AncaRebeca\FullCalendarBundle\Service\Calendar');
+        $this->shouldHaveType('DylanGD\FullCalendarBundle\Service\Calendar');
     }
 
     function it_gets_a_json_string(
@@ -33,7 +33,7 @@ class CalendarSpec extends ObjectBehavior
         $json = '{ [events: foo] }';
 
         $dispatcher
-            ->dispatch(CalendarEvent::SET_DATA, Argument::type('AncaRebeca\FullCalendarBundle\Event\CalendarEvent'))
+            ->dispatch(CalendarEvent::SET_DATA, Argument::type('DylanGD\FullCalendarBundle\Event\CalendarEvent'))
             ->shouldBeCalled()
             ->willReturn($calendarEvent);
 

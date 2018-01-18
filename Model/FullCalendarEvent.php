@@ -1,6 +1,6 @@
 <?php
 
-namespace AncaRebeca\FullCalendarBundle\Model;
+namespace DylanGD\FullCalendarBundle\Model;
 
 abstract class FullCalendarEvent
 {

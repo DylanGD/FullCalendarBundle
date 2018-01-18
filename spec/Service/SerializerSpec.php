@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\AncaRebeca\FullCalendarBundle\Service;
+namespace spec\DylanGD\FullCalendarBundle\Service;
 
-use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
+use DylanGD\FullCalendarBundle\Model\FullCalendarEvent;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -10,7 +10,7 @@ class SerializerSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('AncaRebeca\FullCalendarBundle\Service\Serializer');
+        $this->shouldHaveType('DylanGD\FullCalendarBundle\Service\Serializer');
     }
 
     function it_serialzes_data_successfully(FullCalendarEvent $event1, FullCalendarEvent $event2)

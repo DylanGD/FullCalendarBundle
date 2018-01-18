@@ -1,6 +1,6 @@
 <?php
 
-namespace AncaRebeca\FullCalendarBundle\DependencyInjection;
+namespace DylanGD\FullCalendarBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

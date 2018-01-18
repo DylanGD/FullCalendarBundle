@@ -1,12 +1,12 @@
 ## FullCalendarBundle
 
-[![Build Status](https://travis-ci.org/ancarebeca/FullCalendarBundle.svg)](https://travis-ci.org/ancarebeca/FullCalendarBundle)
+[![Build Status](https://travis-ci.org/dylangd/FullCalendarBundle.svg)](https://travis-ci.org/dylangd/FullCalendarBundle)
 
-This bundle allow you to integrate [FullCalendar.js](http://fullcalendar.io/) library in your Symfony3.
+This bundle allow you to integrate [FullCalendar.js](http://fullcalendar.io/) library in your Symfony4.
 
 ## Requirements
-* FullCalendar.js v3.1.0
-* Symfony v3.1+
+* FullCalendar.js v3.8.0
+* Symfony v4+
 * PHP v5.5+
 * PHPSpec 
 
@@ -24,7 +24,7 @@ Installation process:
 ### 1. Download FullCalendarBundle using composer <a id="download-fullcalendarbundle"></a>
 
 ```bash
-$> composer require ancarebeca/full-calendar-bundle
+$> composer require dylangd/full-calendar-bundle
 ```
 
 ### 2. Enable bundle <a id="download-fullcalendarbundle"></a>
@@ -36,7 +36,7 @@ public function registerBundles()
 {
     return array(
         // ...
-        new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+        new DylanGD\FullCalendarBundle\FullCalendarBundle(),
     );
 }
 ```
@@ -49,7 +49,7 @@ public function registerBundles()
 
 namespace AppBundle\Entity;
 
-use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
+use DylanGD\FullCalendarBundle\Model\FullCalendarEvent;
 
 class CalendarEvent extends FullCalendarEvent
 {
@@ -79,7 +79,7 @@ This listener is called when the event 'fullcalendar.set_data' is launched, for 
 
 namespace AppBundle\Listener;
 
-use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
+use DylanGD\FullCalendarBundle\Model\FullCalendarEvent;
 use AppBundle\Entity\CalendarEvent as MyCustomEvent;
 
 class LoadDataListener
@@ -143,7 +143,7 @@ $> php bin/console assets:install web
 ```yml
 # app/config/routing.yml
 
-ancarebeca_fullcalendar:
+dylangd_fullcalendar:
     resource: "@FullCalendarBundle/Resources/config/routing.yml"
 ```
 

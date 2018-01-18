@@ -1,14 +1,13 @@
 {
     "name": "dylangd/full-calendar-bundle",
-    "description": "Symfony2 integration with the library FullCalendar.js",
+    "description": "Symfony4 integration with the library FullCalendar.js",
     "type": "symfony-bundle",
-    "keywords": ["calendar", "fullcalendar", "jquery calendar", "symfony2 calendar", "symfony2 bundle"],
-    "homepage": "https://github.com/ancarebeca/FullCalendarBundle",
+    "keywords": ["calendar", "fullcalendar", "jquery calendar", "symfony4 calendar", "symfony4 bundle"],
+    "homepage": "https://github.com/DylanGD/FullCalendarBundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Rebeca Mora Anca",
-            "email": "anca.rebeca@gmail.com",
+            "name": "DylanGD",
             "role": "Developer"
         }
     ],
@@ -22,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AncaRebeca\\FullCalendarBundle\\": ""
+            "DylanGD\\FullCalendarBundle\\": ""
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "spec\\AncaRebeca\\FullCalendarBundle\\": "spec"
+            "spec\\DylanGD\\FullCalendarBundle\\": "spec"
         }
     }
 }

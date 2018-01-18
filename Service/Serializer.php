@@ -1,8 +1,8 @@
 <?php
 
-namespace AncaRebeca\FullCalendarBundle\Service;
+namespace DylanGD\FullCalendarBundle\Service;
 
-use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
+use DylanGD\FullCalendarBundle\Model\FullCalendarEvent;
 
 class Serializer implements SerializerInterface
 {

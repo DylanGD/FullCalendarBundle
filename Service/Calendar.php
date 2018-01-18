@@ -1,8 +1,8 @@
 <?php
 
-namespace AncaRebeca\FullCalendarBundle\Service;
+namespace DylanGD\FullCalendarBundle\Service;
 
-use AncaRebeca\FullCalendarBundle\Event\CalendarEvent;
+use DylanGD\FullCalendarBundle\Event\CalendarEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 class Calendar

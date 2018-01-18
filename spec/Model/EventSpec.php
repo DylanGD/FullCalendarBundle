@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\AncaRebeca\FullCalendarBundle\Model;
+namespace spec\DylanGD\FullCalendarBundle\Model;
 
-use AncaRebeca\FullCalendarBundle\Model\Event;
+use DylanGD\FullCalendarBundle\Model\Event;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -15,13 +15,13 @@ class EventSpec extends ObjectBehavior
     {
         $this->startDate = new \DateTime();
 
-        $this->beAnInstanceOf('spec\AncaRebeca\FullCalendarBundle\Model\EventTesteable');
+        $this->beAnInstanceOf('spec\DylanGD\FullCalendarBundle\Model\EventTesteable');
         $this->beConstructedWith($this->title, $this->startDate);
     }
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('AncaRebeca\FullCalendarBundle\Model\Event');
+        $this->shouldHaveType('DylanGD\FullCalendarBundle\Model\Event');
     }
 
 

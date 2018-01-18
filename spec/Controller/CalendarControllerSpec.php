@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\AncaRebeca\FullCalendarBundle\Controller;
+namespace spec\DylanGD\FullCalendarBundle\Controller;
 
-use AncaRebeca\FullCalendarBundle\Service\Calendar;
+use DylanGD\FullCalendarBundle\Service\Calendar;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @mixin \AncaRebeca\FullCalendarBundle\Controller\CalendarController
+ * @mixin \DylanGD\FullCalendarBundle\Controller\CalendarController
  */
 class CalendarControllerSpec extends ObjectBehavior
 {
@@ -21,7 +21,7 @@ class CalendarControllerSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('AncaRebeca\FullCalendarBundle\Controller\CalendarController');
+        $this->shouldHaveType('DylanGD\FullCalendarBundle\Controller\CalendarController');
     }
 
     function it_is_a_Symfony_controller()
