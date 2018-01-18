@@ -48,7 +48,7 @@ class Event extends FullCalendarEvent
     protected $editable = true;
     /**
      * @var boolean
-     * @ORM\Column(type="boolean", name="strartEditable", nullable = true)
+     * @ORM\Column(type="boolean", name="startEditable", nullable = true)
      */
     protected $startEditable = true;
     /**
